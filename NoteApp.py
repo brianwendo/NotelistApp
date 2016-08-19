@@ -5,7 +5,7 @@ class NotesApplication(object):
 		self.author = author
 		self.notes_list = NotesApplication.notes_list
 
-	def Create (self, notes_content):
+	def create (self, notes_content = None):
 		#Creates a new note
 		if notes_list != "":
 			self.note_list.append(notes_content)
@@ -15,14 +15,13 @@ class NotesApplication(object):
 
 	def list(self):
 		#Generates a list of notes
-		for note in self.notes_list
-		return self note
+			return self.notes_list
 		
 
 	def get(self, note_id):
 		#gets a particular note in notes list
 		try:
-			return self.notes_list(note_id)
+			return self.notes_list[note_id]
 		except :
 			return "Note not found"
 			
